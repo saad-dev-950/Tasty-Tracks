@@ -1,0 +1,201 @@
+/* Footer Wrapper & Background */
+.footer-wrapper {
+  position: relative;
+  background-image: url('/Assets/Images/footer_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+/* Wavy Top Border (Optional separator effect) */
+.footer-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #fadb14, transparent);
+  z-index: 2;
+}
+
+/* Glassmorphism Overlay */
+.footer-overlay {
+  background: rgba(5, 5, 5, 0.92); /* Darker overlay for better text readability */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow to all text for better contrast */
+}
+
+/* Titles */
+.footer-title {
+  color: #fadb14;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Social Icons with Glow */
+.social-icons-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+
+.social-icon.facebook:hover {
+  background: #1877f2;
+  color: #fff;
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.7), 0 0 30px rgba(24, 119, 242, 0.4);
+  border-color: #1877f2;
+}
+
+.social-icon.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(204, 35, 102, 0.6), 0 0 25px rgba(240, 148, 51, 0.5);
+  border-color: transparent;
+}
+
+.social-icon.twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 0 15px rgba(29, 161, 242, 0.7), 0 0 30px rgba(29, 161, 242, 0.4);
+  border-color: #1da1f2;
+}
+
+.social-icon.tiktok:hover {
+  background: #010101;
+  color: #fff;
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: -3px -3px 15px rgba(0, 242, 254, 0.8), 3px 3px 15px rgba(254, 9, 121, 0.8);
+  border-color: #010101;
+  text-shadow: -2px -2px 0 rgba(0, 242, 254, 0.8), 2px 2px 0 rgba(254, 9, 121, 0.8);
+}
+
+/* Quick Links Animated Underline */
+.footer-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 3px;
+  width: fit-content;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fadb14;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Contact Info */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.contact-item i {
+  color: #fadb14;
+  font-size: 1.3rem;
+  background: rgba(250, 219, 20, 0.1);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+/* Newsletter Input */
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.newsletter-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fadb14;
+  box-shadow: 0 0 15px rgba(250, 219, 20, 0.2);
+  outline: none;
+}
+
+.newsletter-btn {
+  border-radius: 30px;
+  padding: 0 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(250, 219, 20, 0.3);
+}
+
+/* Copyright Section */
+.copyright-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  margin-top: 60px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,24 @@
+.menu-section {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: #fadb14;
+  margin-bottom: 40px;
+  border-radius: 2px;
+}
+
+.menu-grid {
+  margin-top: 20px;
+}

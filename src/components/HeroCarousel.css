@@ -1,0 +1,75 @@
+.hero-carousel-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.custom-carousel .slick-dots li button {
+  height: 6px !important;
+  background: #fff !important;
+  opacity: 0.5;
+}
+
+.custom-carousel .slick-dots li.slick-active button {
+  background: #fadb14 !important;
+  opacity: 1;
+  width: 24px !important;
+}
+
+.carousel-slide {
+  height: 70vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px 60px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-out;
+}
+
+.carousel-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-subtitle {
+  color: #fadb14;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 2rem;
+  }
+  .carousel-overlay {
+    padding: 20px 30px;
+    width: 90%;
+  }
+}

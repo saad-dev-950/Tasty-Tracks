@@ -1,0 +1,167 @@
+body {
+  background-color: #000 !important;
+  color: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* Global Placeholder Styling for better visibility on dark backgrounds */
+::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+}
+
+/* Original Custom Classes */
+.orngyellow {
+  color: #fadb14 !important; /* using antd yellow but matching the name */
+}
+
+.img-box {
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.dealLinks {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.dealLinks:hover {
+  color: #fadb14;
+}
+
+.price-box {
+  margin-top: auto;
+}
+
+#top-menu {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 10;
+}
+
+/* =========================================
+   CUSTOM PREMIUM SCROLLBAR
+   ========================================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fadb14;
+}
+
+/* =========================================
+   ADVANCED IMAGE HOVER EFFECTS (ZOOM & PAN)
+   ========================================= */
+.zoom-image-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.zoom-image-container img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.zoom-image-container:hover img {
+  transform: scale(1.08);
+}
+
+/* =========================================
+   SILICON VALLEY PREMIUM TOAST NOTIFICATIONS
+   ========================================= */
+.Toastify__toast-container {
+  z-index: 99999 !important;
+  padding: 12px !important;
+}
+
+.Toastify__toast.premium-toast {
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-radius: 16px !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  padding: 16px 20px !important;
+  margin-bottom: 12px !important;
+  overflow: hidden !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* TYPE SPECIFIC GRADIENTS */
+.Toastify__toast--success.premium-toast {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.95), rgba(4, 120, 87, 0.98)) !important;
+  border: 1px solid rgba(16, 185, 129, 0.5) !important;
+  box-shadow: 0 15px 35px rgba(4, 120, 87, 0.3) !important;
+}
+.Toastify__toast--error.premium-toast {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.95), rgba(185, 28, 28, 0.98)) !important;
+  border: 1px solid rgba(239, 68, 68, 0.5) !important;
+  box-shadow: 0 15px 35px rgba(185, 28, 28, 0.3) !important;
+}
+.Toastify__toast--info.premium-toast {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(29, 78, 216, 0.98)) !important;
+  border: 1px solid rgba(59, 130, 246, 0.5) !important;
+  box-shadow: 0 15px 35px rgba(29, 78, 216, 0.3) !important;
+}
+.Toastify__toast--warning.premium-toast,
+.Toastify__toast--default.premium-toast {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.95), rgba(180, 83, 9, 0.98)) !important;
+  border: 1px solid rgba(245, 158, 11, 0.5) !important;
+  box-shadow: 0 15px 35px rgba(180, 83, 9, 0.3) !important;
+}
+
+.Toastify__toast.premium-toast:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: brightness(1.1);
+}
+
+.premium-toast-body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.Toastify__toast-icon {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.Toastify__close-button {
+  color: rgba(255, 255, 255, 0.6) !important;
+  opacity: 0.7 !important;
+  transition: all 0.2s !important;
+}
+
+.Toastify__close-button:hover {
+  color: #fadb14 !important;
+  opacity: 1 !important;
+}
+
+/* Progress Bar styling contrasting with colored backgrounds */
+.Toastify__progress-bar {
+  height: 4px !important;
+  border-radius: 0 0 16px 16px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+}

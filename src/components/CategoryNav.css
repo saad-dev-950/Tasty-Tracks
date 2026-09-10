@@ -1,0 +1,29 @@
+.category-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.category-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.category-link:hover {
+  background: #fadb14;
+  color: #141414;
+  border-color: #fadb14;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(250, 219, 20, 0.3);
+}
