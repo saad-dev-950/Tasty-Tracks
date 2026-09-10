@@ -155,6 +155,7 @@ In the project directory, you can run:
 
 ---
 
-## 📄 License
+## **📄 License & Credits**
 
-This project is open-source and available under the [MIT License](LICENSE).
+Designed & Developed with ❤️ by **Saad Nadeem** (**Saad Dev Hub**). 
+All rights reserved.
