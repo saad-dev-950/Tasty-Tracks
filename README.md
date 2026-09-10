@@ -1,12 +1,21 @@
-# 🍔 Tasty Tracks by SJ
+# 🍔 Tasty Tracks
 
 > A premium, modern, and interactive Food Ordering & Delivery Web Application crafted with high-performance animations, sleek glassmorphism UI, and real-time state management.
 
 ---
 
+## 👨‍💻 Developer Information
+
+- **Developer Name**: Saad Nadeem
+- **Platform / Brand**: Saad Dev Hub 🚀
+- **Role**: Full-Stack Developer | MERN Stack
+- **Mission**: Building clean, modern, high-performance, and user-centric web applications.
+
+---
+
 ## 🌟 Overview
 
-**Tasty Tracks by SJ** is an end-to-end digital food ordering platform designed to offer a seamless, immersive, and visually captivating dining experience. Built using **React 19** and **Vite**, the application features a dark luxury aesthetic, dynamic menu filtering, interactive cart & checkout systems, live order tracking, and a comprehensive admin management dashboard.
+**Tasty Tracks** is an end-to-end digital food ordering platform designed to offer a seamless, immersive, and visually captivating dining experience. Built using **React 19** and **Vite**, the application features a dark luxury aesthetic, dynamic menu filtering, interactive cart & checkout systems, live order tracking, and a comprehensive admin management dashboard.
 
 ---
 
@@ -57,7 +66,7 @@
 ## 📁 Project Structure
 
 ```text
-Tasty Tracks by SJ/
+Tasty Tracks/
 ├── public/                  # Static assets & favicon
 ├── src/
 │   ├── assets/              # Images, banners, and logos
@@ -107,7 +116,7 @@ Tasty Tracks by SJ/
 
 ## 🚀 Getting Started
 
-Follow these steps to run **Tasty Tracks by SJ** locally on your machine.
+Follow these steps to run **Tasty Tracks** locally on your machine.
 
 ### **Prerequisites**
 Ensure you have the following installed on your system:
@@ -143,15 +152,6 @@ In the project directory, you can run:
 - **`npm run build`**: Compiles and bundles the application for production in the `dist/` directory.
 - **`npm run preview`**: Previews the production build locally.
 - **`npm run lint`**: Runs Oxlint to inspect code for syntax and style issues.
-
----
-
-## 👨‍💻 Developer Information
-
-- **Developer Name**: Saad Nadeem
-- **Platform / Brand**: Saad Dev Hub 🚀
-- **Role**: Full-Stack Developer | MERN Stack
-- **Mission**: Building clean, modern, high-performance, and user-centric web applications.
 
 ---
 
